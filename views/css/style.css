@@ -1,0 +1,372 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/*=====FONT*=====*/
+/*@font-face {
+    font-family: 'AERO';
+    src: url('fonts/AERO.eot');
+    src: url('fonts/AERO.eot?#iefix') format('embedded-opentype'),
+         url('fonts/AERO.woff') format('woff'),
+         url('fonts/AERO.ttf') format('truetype'),
+         url('fonts/AERO.svg#AERO') format('svg');
+	font-style:normal;
+	font-weight:normal;
+}
+@font-face {
+	font-family: 'District';
+    src: url('fonts/District.eot');
+    src: url('fonts/District.eot?#iefix') format('embedded-opentype'),
+         url('fonts/District.woff') format('woff'),
+         url('fonts/District.ttf') format('truetype'),
+         url('fonts/District.svg#District') format('svg');
+	font-style:normal;
+	font-weight:normal;
+}
+
+
+.AERO{
+	font-family: 'AERO';
+	}
+
+.District{
+	font-family: 'District';
+	}
+*/
+
+
+
+
+/*===== index start ====*/
+body{
+	padding:0;
+	margin:0;
+	overflow-x:hidden;
+	/*overflow-y:hidden;*/
+	background-color:#fff200;
+}
+
+.wrapper{ 
+    margin:0 auto;
+	background-color:#FFF;
+	width:100%;
+	max-width:1024px;
+	height:auto; 
+	
+	}
+.logo{ width:100%; margin:0 auto; text-align:center;
+     border-bottom:1px solid #cccccc; clear:both;}
+.logo-reduce{max-width:100%; height:auto;}
+
+.heading-div{ width:100%; clear:both; margin-top:2em;}
+.heading-01{ width:49.5%; float:left; color:#ed1c24; font-family:Arial, Helvetica, sans-serif; font-size:1.8em; line-height:1.1em; font-weight:bolder; text-align:center; letter-spacing:-1.5px;}
+.heading-02{ width:49.5%; float:left; color:#f36f21; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; line-height:1.3em; font-weight:bolder; text-align:center; letter-spacing:-1.5px; border-left:2px #ed1c24 solid;}
+
+.dropdown-bg{width:100%; height:659px; clear:both; margin-top:1em; background:url(../img/index_bg.png) no-repeat center top; background-size:100%; }
+
+.dropdown{ width:30%; height:100px; margin:34% 0 0 12.5%; float:left; text-align:center;}
+.prizes{ width:50%; height:auto; margin:35% 0 0 4%; Float:left; text-align:center;}
+
+
+.btn {width:40%;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color:#FFF;
+  font-size: 22px;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  margin:4% 0 0 20%;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+.tnc{clear:both; width:100%; font-family:Arial, Helvetica, sans-serif; font-size:0.8em; color:#666; text-align:center; border-top:1px solid #cccccc; padding:8px 0 8px 0;}
+
+.glossymenu{
+
+padding: 0;
+width: 85%; /*width of menu*/
+border: 1px solid #b80f5a;
+border-bottom-width: 0;
+background:url("../img/round.png");
+}
+
+.glossymenu a.menuitem{
+font: bold 18px Arial, Helvetica, sans-serif, Tahoma;
+color:#fbc24a;
+display: block;
+position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+width: auto;
+padding: 2%;
+text-decoration: none;
+border-bottom:1px solid #987d33; background-color:#b80f5a;
+
+}
+
+
+.glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+color: ;
+}
+
+.glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+position: absolute;
+top: 5px;
+right: 5px;
+border: none; 
+}
+
+.glossymenu a.menuitem:hover{
+background-image:url(images/poll_bg.jpg); background-repeat:repeat-x;
+}
+
+.glossymenu div.submenu{ /*DIV that contains each sub menu*/
+background: white;
+}
+
+.glossymenu div.submenu ul{ /*UL of each sub menu*/
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.glossymenu div.submenu ul li{
+border-bottom: 1px solid #d2ccb9;
+}
+
+.glossymenu div.submenu ul li a{
+display: block;
+font: normal 15px Arial, Helvetica, sans-serif, Tahoma;
+color: black;
+text-decoration: none;
+padding: 2px 0;
+padding-left: 10px;
+}
+
+.glossymenu div.submenu ul li a:hover{
+background: #fff6a7;
+colorz: white;
+}
+
+
+.hide{display:none;}
+
+@media only screen and (max-width: 480px) {
+	.show{display:none;}
+    .hide{display:block;}
+
+	.wrapper{ 
+	background-color:#FFF;
+	width:100%; 
+	
+	}
+.logo{ width:100%; margin:0 auto; text-align:center;
+     border-bottom:1px solid #cccccc; clear:both;}
+.logo-reduce{max-width:50%; height:auto;}
+
+.heading-div{ width:100%; clear:both; margin-top:1em;}
+.heading-01{ width:100%; color:#ed1c24; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; line-height:1.1em; font-weight:bolder; text-align:center; }
+
+.heading-02{ width:100%; color:#f36f21; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; line-height:1.3em; letter-spacing:0.1px; font-weight:bolder; text-align:center; border-left:2px #FFF solid; margin:2% 0 0 0; }
+
+.dropdown-mo{width:100%; height:665px; clear:both; margin-top:1em; background:url(../img/index_prizes_mobile.png) no-repeat center top; background-size:100%; }
+
+.dropdown{ width:60%; height:100px; margin:400px 0 0 12.5%; float:left; text-align:center;}
+
+/*menu*/
+.glossymenu{
+padding: 0;
+border: 1px solid #b80f5a;
+border-bottom-width: 0;
+
+}
+.glossymenu a.menuitem{
+font: bold 20px Arial, Helvetica, sans-serif, Tahoma;
+color:#fbc24a;
+display: block;
+position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+width: auto;
+padding: 2%;
+text-decoration: none;
+border-bottom:1px solid #987d33; background-color:#b80f5a;
+}
+.glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+color: ;
+}
+
+.glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+position: absolute;
+top: 5px;
+right: 5px;
+border: none; 
+}
+
+.glossymenu a.menuitem:hover{
+background-image:url(images/poll_bg.jpg); background-repeat:repeat-x;
+}
+
+.glossymenu div.submenu{ /*DIV that contains each sub menu*/
+background: white;
+}
+
+.glossymenu div.submenu ul{ /*UL of each sub menu*/
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.glossymenu div.submenu ul li{
+border-bottom: 1px solid #d2ccb9;
+}
+
+.glossymenu div.submenu ul li a{
+display: block;
+font: normal 15px Arial, Helvetica, sans-serif, Tahoma;
+color: black;
+text-decoration: none;
+padding: 2px 0;
+padding-left: 10px;
+}
+
+.glossymenu div.submenu ul li a:hover{
+background: #fff6a7;
+colorz: white;
+}
+
+.prizes-mo{ width:100%; height:auto; margin:2% 0 5% 0; Float:left; text-align:center;}
+
+
+.btn {
+	width:40%;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color:#FFF;
+  font-size: 22px;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  margin:4% 0 0 20%;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.tnc{clear:both; width:100%; font-family:Arial, Helvetica, sans-serif; font-size:0.8em; color:#666; text-align:center; border-top:1px solid #cccccc; padding:8px 0 8px 0;}
+
+
+.dropdown{
+	height:384px;
+	width:80%;
+}
+}
+
+
+/*=====form=====*/
+.form-wraper{ width:50%; height:auto; background-color:#517c8b; margin-top:2%;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;}
+
+.top-heading{width:auto; background-color:#6785c0;
+border-bottom:2px solid #375a85; font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:1em; color:#FFF; padding:2% 0 2% 2%;}
+
+.form{width:95%; margin:0 2% 0 2%;}
+
+.ciu-search__input {
+    -moz-appearance: none;
+    border-width: 0px 0px 2px;
+    border-style: none none solid;
+    border-color: -moz-use-text-color -moz-use-text-color #639eb2;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    background: none repeat scroll 0% 0% transparent;
+    width:100%;
+   padding:4% 0 0 0; 
+    text-align: left;
+	font-family:Arial, Helvetica, sans-serif; font-size:0.9em; color:#FFF; margin:0 auto;
+}
+
+.submit-bt{ width:100%; text-align:right; padding:3% 0 3% 0;}
+/*===submit bt===*/
+.css_btn_class {
+	font-size:18px;
+	font-family:Arial;
+	font-weight:bold;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #fff6af;
+	padding:6px 21px;
+	text-decoration:none;
+	background:-moz-linear-gradient( center top, #fff6af 18%, #f6e550 87% );
+	background:-ms-linear-gradient( top, #fff6af 18%, #f6e550 87% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff6af', endColorstr='#f6e550');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(18%, #fff6af), color-stop(87%, #f6e550) );
+	background-color:#fff6af;
+	color:#b80f5b;
+	display:inline-block;
+	text-shadow:1px 2px 0px #ffffff;
+ 	-webkit-box-shadow:inset 1px 1px 0px 0px #fff383;
+ 	-moz-box-shadow:inset 1px 1px 0px 0px #fff383;
+ 	box-shadow:inset 1px 1px 0px 0px #fff383;
+}.css_btn_class:hover {
+	background:-moz-linear-gradient( center top, #f6e550 18%, #fff6af 87% );
+	background:-ms-linear-gradient( top, #f6e550 18%, #fff6af 87% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6e550', endColorstr='#fff6af');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(18%, #f6e550), color-stop(87%, #fff6af) );
+	background-color:#f6e550;
+}.css_btn_class:active {
+	position:relative;
+	top:1px;
+}
+/* This css button was generated by css-button-generator.com */
+

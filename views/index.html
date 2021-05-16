@@ -1,0 +1,302 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+	<title>Demo Client</title>
+
+	<script>
+		function validateForm() {
+
+
+			var name = document.forms["myForm"]["name"].value;
+			var email = document.forms["myForm"]["email"].value;
+			var mobile = document.forms["myForm"]["mobile"].value;
+			var address = document.forms["myForm"]["address"].value;
+
+			var unique_code = document.forms["myForm"]["unique_code"].value;
+			var image = document.forms["myForm"]["image"].value;
+
+			if (image.length < 1) {
+				document.getElementById('error-image').innerHTML = " Please Select Image *"
+			}
+			if (name.length < 1) {
+				document.getElementById('error-name').innerHTML = " Please Enter Your Name *"
+			}
+			if (email.length < 1) {
+				document.getElementById('error-email').innerHTML = " Please Enter Your Email *";
+			}
+			if (mobile.length < 1 || mobile.length < 10||mobile.length > 10) {
+				document.getElementById('error-phone').innerHTML = " Please Enter Your Phone *";
+			}
+			//   if ( mobile.length<10) {
+			// 	document.getElementById('error-phone').innerHTML = " Please Enter Valid Phone number";
+			//   }
+			if (address.length < 1) {
+				document.getElementById('error-message').innerHTML = " Please Enter Your Adrress *";
+			}
+			if (unique_code.length < 1) {
+				document.getElementById('error-unique_code').innerHTML = " Please Enter Valid Unique code *";
+			}
+			if (name.length < 1 || email.length < 1 || mobile.length < 10 || mobile.length > 10 || address.length < 1 || unique_code.length < 1 || image.length < 1) {
+				return false;
+			}
+		}
+
+		console.log(res.message, '--message')
+	</script>
+	<style>
+		body {
+			background-color: #d6d6d6;
+			margin: 0px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		#wrapper {
+			width: 100%;
+			max-width: 1024px;
+			margin: 0 auto;
+			background-color: #fff;
+			height: 100px;
+		}
+
+		#top-header {
+			width: 100%;
+			float: left;
+			text-align: center;
+		}
+
+		#top-banner {
+			width: 100%;
+			max-width: 443px;
+			float: left;
+		}
+
+		.line {
+			width: 100%;
+			background-color: #cccccc;
+			height: 1px;
+			float: left;
+		}
+
+		#mainpanel {
+			width: 100%;
+			float: left;
+			margin-top: 0px;
+			background-color: #fff;
+			background: url("img/index_bg-new.png") #fff;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			height: 659px;
+			background-position: center;
+		}
+
+		.childdiv {
+			width: 40%;
+			margin-left: 5%;
+			float: left;
+			padding-top: 80px;
+		}
+
+		#child-img {
+			width: 100%;
+			float: left;
+			margin-top: 50px;
+		}
+
+		#form {
+			margin-top: 150px;
+			width: 100%;
+			float: left;
+			background-color: #5d7f8b;
+			border-radius: 5px;
+			padding-bottom: 20px;
+		}
+
+		#mobile-man {
+			width: 100%;
+		}
+
+		#form-title {
+			background-color: #6785c0;
+			text-align: center;
+			color: #fff;
+			width: 100%;
+			float: left;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-bottom: solid 4px #375a85;
+		}
+
+		#form-content {
+			width: 100%;
+			float: left;
+			margin-left: 5%;
+			width: 90%;
+			padding-top: 10px;
+		}
+
+		input[type="text"],
+		input[type="email"] {
+			background-color: #fff;
+			border: solid 2px #7d99a2;
+			outline: none;
+			color: #000;
+			width: 100%;
+			margin-bottom: 15px;
+			font-size: 1em;
+		}
+
+		input[type="file"] {
+			color: #fff;
+		}
+
+		input[type="submit"] {
+			margin-top: 10px;
+			font-size: 1.5em;
+			float: right;
+			border-radius: 5px;
+			outline: none;
+			border: none;
+			background-color: #fff283;
+			color: #b80f5a;
+		}
+
+		#tncdiv {
+			width: 90%;
+			float: left;
+			text-align: right;
+			clear: both;
+			background-color: #fff;
+			padding: 1% 5%;
+			font-size: 0.8em;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		@media only screen and (max-width: 800px) {
+			body {
+				background-color: #fff;
+			}
+
+			.childdiv {
+				width: 80%;
+				float: left;
+			}
+
+			#child-img {
+				display: none;
+			}
+
+			#form {
+				position: relative;
+				top: -250px;
+			}
+
+			#mobile-man {
+				width: 100%;
+				margin-top: 200px;
+				background: url("img/inner_prizes_mobile.png") #fff;
+				background-repeat: no-repeat;
+				background-position: center;
+				height: 600px;
+			}
+
+			#tncdiv {
+				position: relative;
+				top: 300px;
+			}
+
+			#bottom-line {
+				position: relative;
+				top: 300px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div class="line"></div>
+		<div id="mainpanel">
+			<div class="childdiv">
+				<img id="child-img" src="img/man.png" />
+			</div>
+			<div class="childdiv">
+				<div id="form">
+					<div style="background-color:#6785c0;"><Span id="form-title">Please fill below form to verifiy to
+							your purchase</span></div>
+					<div id="form-content">
+						<!-- <form action="http://localhost:4000/employees" method="POST" enctype="multipart/form-data">
+							<input type="text" placeholder="Name" name="name "id="name" placeholder="enter name"/>
+							<input type="email" placeholder="Email" name="email"id="email"/>
+							<input type="text" placeholder="Mobile Number"name="mobile" id="mobile"/>
+							<input type="text" placeholder="Address" name="address"id="address"/>
+							<input type="text" placeholder="8 Digit Unique Code" name="unique_code"id="unique_code"/>
+							<span style="color:#fff;">Upload your pic: </span> 
+							<input type="file" placeholder="Upload your pic" name="image" name="image" id="image"/>
+							<input type="Submit"/>
+						</form> -->
+
+
+
+						<form name="myForm" action="http://localhost:4000/employees" method="POST"
+							enctype="multipart/form-data" onsubmit="return validateForm()">
+							<div style='color:rgb(170, 5, 5);' class="form-group">
+								<span id="error-name"></span>
+								<input type="text" placeholder="Name" name="name " id="name" placeholder="enter name" />
+							</div>
+							<div class="form-group">
+								<span style='color:rgb(170, 5, 5);' id="error-email"></span>
+								<input type="email" name="email" id="email" class="form-control"
+									placeholder="Enter your Email">
+							</div>
+							<div class="form-group">
+								<span style='color:rgb(170, 5, 5);' id="error-phone"></span>
+								<input type="text" name="mobile" id="mobile" class="form-control"
+									placeholder="Enter your Phone">
+							</div>
+							<div class="form-group">
+								<span style='color:rgb(170, 5, 5);' id="error-message"></span>
+								<input type="text" name="address" class="form-control" rows="3"
+									placeholder="Enter your address"></input>
+							</div>
+
+							<div class="form-group">
+								<span style='color:rgb(170, 5, 5);' id="error-unique_code"></span>
+								<input type="text" name="unique_code" class="form-control"
+									placeholder="Enter your unique_code"></input>
+							</div>
+
+							<div class="form-group">
+								<span style='color:rgb(170, 5, 5);' id="error-image"></span>
+								<!-- <input type="file" placeholder="Upload your pic" name="image" name="image" id="image"/> -->
+								<!-- <img id="image" alt="your image" width="100" height="100" /> -->
+
+								<input type="file" name="image"
+									onchange="document.getElementById('image').src = window.URL.createObjectURL(this.files[0])">
+
+
+
+								<!-- <input type="file"name="image" id="image" class="form-control" placeholder="Upload your pic"></input> -->
+							</div>
+							<div class="form-group">
+								<input type="submit" value="Send">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div id="mobile-man">
+
+				</div>
+			</div>
+		</div>
+		<div class="line" id="bottom-line"></div>
+	</div>
+</body>
+
+</html>
